@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chifoumi</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="">
+    <main class="p-1">
+      <div class="mw-1320 m-auto text-c">
+        <h1>Chifoumi</h1>
+        <div class="container my-1">
+          <div class="mw-400 m-auto">
+            <input
+              type="text"
+              placeholder="Joueur"
+              maxlength="10"
+              id="user-name-input"
+            />
+          </div>
+          <div class="d-flex wrap my-1">
+            <div class="bg p-1 f-m shadow">
+              <h2 id="nickNameTitle">Joueur</h2>
+              <div class="image-box">
+                <img
+                  src="https://api.dicebear.com/7.x/adventurer-neutral/svg?seed=Player&backgroundColor=b89585&eyebrows=variant02&eyes=variant24&mouth=variant02&flip="
+                  alt="Player"
+                  width="100"
+                  style="border-radius: 50px"
+                />
+              </div>
+              <div class="container user-choice d-flex g-1 jc-c ai-c">
+                <div id="pierre" class="user-choice__button">✊🏼</div>
+                <div id="feuille" class="user-choice__button">🤚🏼</div>
+                <div id="ciseaux" class="user-choice__button">✌🏼</div>
+              </div>
+              <div class="user-score my-1">SCORE: 0</div>
+            </div>
+            <div class="container f-m d-flex column jc-c ai-c p-1">
+              <h2 class="versus">VS</h2>
+              <div class="container">
+                <div class="result"></div>
+                <div class="message">Patientez...</div>
+              </div>
+            </div>
+            <div class="bg p-1 f-m shadow">
+              <h2>Goblin</h2>
+              <div class="image-box">
+                <img
+                  src="https://api.dicebear.com/7.x/adventurer-neutral/svg?seed=Player&backgroundColor=3E7336&eyebrows=variant01&eyes=variant25&mouth=variant13&flip="
+                  alt="Player"
+                  width="100"
+                  style="border-radius: 50px"
+                />
+              </div>
+              <div class="container computer-choice d-flex jc-c ai-c">
+                <div>Ready</div>
+              </div>
+              <div class="computer-score my-1">SCORE: 0</div>
+            </div>
+          </div>
+          <div class="my-1">
+            <div class="progress">
+              <div class="progress__bar user-bar"></div>
+              <div class="progress__bar computer-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/chifoumi.js"></script>
+  </body>
+</html>

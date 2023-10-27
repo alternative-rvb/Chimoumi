@@ -1,0 +1,64 @@
+@import 'https://cdn.jsdelivr.net/gh/alternative-rvb/Simple-Semantic-CSS/css/v1.30/main.css';
+
+
+.user-choice__button {
+    cursor: pointer;
+    font-size: 3rem;
+    transform-origin: center;
+}
+
+.user-choice__button:hover {
+    transform: scale(1.2);
+}
+
+.computer-choice {
+    font-size: 3rem;
+    
+}
+.user-choice {
+    gap: 32px;
+}
+.result {
+    font-size: 2rem;
+}
+
+.message {
+    display: none;
+}
+
+.scale {
+    transform: scale(0.5);
+    opacity: 0.5;
+}
+
+.versus {
+    font-size: 4rem;
+}
+
+.container {
+    min-height: 80px;
+}
+
+.bg {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress__bar {
+    width: 0;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.user-bar {
+    background-color: green;
+}
+
+.computer-bar {
+    background-color: red;
+}
