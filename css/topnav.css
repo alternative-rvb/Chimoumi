@@ -1,5 +1,18 @@
+:root {
+    --header-height: 83px;
+}
+
+main {
+    margin-top: var(--header-height);
+    min-height: calc(100vh - var(--header-height));
+}
 .arvb-header {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .arvb-nav {
@@ -53,7 +66,7 @@
 
 .open {
     position: fixed;
-    top: 83px;
+    top: var(--header-height);
     right: 0;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.95);
@@ -64,6 +77,9 @@
 }
 
 @media (min-width: 1024px) {
+    .arvb-nav__menu {
+        display: none;
+    }
     .arvb-nav__sidebar {
         display: initial;
     }
