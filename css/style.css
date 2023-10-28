@@ -20,11 +20,13 @@ main {
 
 .computer-choice {
     font-size: 3rem;
-    
+
 }
+
 .user-choice {
     gap: 32px;
 }
+
 .result {
     font-size: 2rem;
 }
@@ -56,6 +58,7 @@ main {
     justify-content: center;
     align-items: center;
 }
+
 .progress__bar {
     width: 0;
     height: 10px;
